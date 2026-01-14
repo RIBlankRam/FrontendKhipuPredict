@@ -172,11 +172,13 @@ export default function KhipuMap({
   zoomSnap={0.25}>
           {/* New Dark Modern Tile */}
           <TileLayer
-  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-  attribution='&copy; OpenStreetMap contributors'
+  url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+  attribution='&copy; OpenStreetMap contributors &copy; CARTO'
+  subdomains={["a", "b", "c", "d"]}
   noWrap={true}
   bounds={[[-85, -180], [85, 180]]}
 />
+
 
 
           <MapMover coords={selectedMuseumCoords} />
