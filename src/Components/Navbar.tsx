@@ -9,21 +9,6 @@ export const Navbar = () => {
 
         {/* LOGO CON ANIMACIÓN Y COLORES */}
         <div className="w-full h-[70px] bg-[#111] border-b border-gray-800 flex items-center justify-center">
-          <h1 className="text-2xl font-extrabold tracking-wider brand-animate flex gap-0.5">
-
-            <span style={{ color: "#ff3b3b" }}>K</span>
-            <span style={{ color: "#ff7f00" }}>h</span>
-            <span style={{ color: "#ffea00" }}>i</span>
-            <span style={{ color: "#32cd32" }}>p</span>
-            <span style={{ color: "#00bfff" }}>u</span>
-
-            <span style={{ color: "#ff1493" }}>P</span>
-            <span style={{ color: "#ff3b3b" }}>r</span>
-            <span style={{ color: "#ffa500" }}>e</span>
-            <span style={{ color: "#ffff00" }}>d</span>
-            <span style={{ color: "#00fa9a" }}>i</span>
-            <span style={{ color: "#00bfff" }}>c</span>
-            <span style={{ color: "#ba55d3" }}>t</span>
 
 <h1 className="text-2xl font-extrabold tracking-wider flex gap-0.5">
   {[
@@ -53,7 +38,7 @@ export const Navbar = () => {
     </span>
   ))}
 </h1>
-          </h1>
+        
         </div>
 
         {/* MENU DESKTOP */}
