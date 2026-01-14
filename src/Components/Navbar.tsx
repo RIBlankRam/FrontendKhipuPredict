@@ -12,19 +12,19 @@ export const Navbar = () => {
 
 <h1 className="text-2xl font-extrabold tracking-wider flex gap-0.5">
   {[
-    { l: "K", c: "#ff3b3b" },
-    { l: "h", c: "#ff7f00" },
-    { l: "i", c: "#ffea00" },
-    { l: "p", c: "#32cd32" },
-    { l: "u", c: "#00bfff" },
-    { l: " ", c: "" },
-    { l: "P", c: "#ff1493" },
-    { l: "r", c: "#ff3b3b" },
-    { l: "e", c: "#ffa500" },
-    { l: "d", c: "#ffff00" },
-    { l: "i", c: "#00fa9a" },
-    { l: "c", c: "#00bfff" },
-    { l: "t", c: "#ba55d3" },
+    { l: "K ", c: "#ff3b3b" },
+    { l: "h ", c: "#ff7f00" },
+    { l: "i ", c: "#ffea00" },
+    { l: "p ", c: "#32cd32" },
+    { l: "u ", c: "#00bfff" },
+    { l: "  ", c: "" },
+    { l: "P ", c: "#ff1493" },
+    { l: "r ", c: "#ff3b3b" },
+    { l: "e ", c: "#ffa500" },
+    { l: "d ", c: "#ffff00" },
+    { l: "i ", c: "#00fa9a" },
+    { l: "c ", c: "#00bfff" },
+    { l: "t ", c: "#ba55d3" },
   ].map((item, i) => (
     <span
       key={i}
