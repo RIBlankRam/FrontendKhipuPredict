@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 interface KhipuDetail {
   id: number;
@@ -22,7 +23,7 @@ export default function KhipuList({
   const [data, setData] = useState<Record<string, KhipuDetail[]>>({});
 
   useEffect(() => {
-    fetch("/api/khipus/grouped")
+    fetch(`${API_URL}/api/khipus/grouped`)
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch(console.error);

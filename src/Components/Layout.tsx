@@ -6,6 +6,8 @@ import KhipuMap from "./KhipuMap";
 
 import museumCoords from "../data/museumCoords.json";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 // Tipo para cada museo
 interface MuseumCoord {
   lat: number;
@@ -62,7 +64,8 @@ export default function Layout() {
   // SELECCIÓN DE KHIPU
   async function handleKhipuSelect(khipu: any) {
     try {
-      const res = await fetch(`/api/khipus/${khipu.id}`);
+      const res = await fetch(`${API_URL}/api/khipus/${khipu.id}`);
+          if (!res.ok) throw new Error("Error al conectar con backend");
       const fullData = await res.json();
 
       setSelectedKhipu(fullData);
