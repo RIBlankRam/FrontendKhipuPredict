@@ -172,13 +172,12 @@ export default function KhipuMap({
   zoomSnap={0.25}>
           {/* New Dark Modern Tile */}
           <TileLayer
-            url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-            attribution='&copy; Stadia Maps &copy; OpenMapTiles &copy; OpenStreetMap'
-            /* PREVENIR MAPA DUPLICADO */
-    noWrap={true}
-    bounds={[[-85, -180], [85, 180]]}
-    
-          />
+  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  attribution='&copy; OpenStreetMap contributors'
+  noWrap={true}
+  bounds={[[-85, -180], [85, 180]]}
+/>
+
 
           <MapMover coords={selectedMuseumCoords} />
 
