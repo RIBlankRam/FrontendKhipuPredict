@@ -8,6 +8,26 @@
   width: 100%;
 }
 
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 6px currentColor;
+    opacity: 0.85;
+  }
+  50% {
+    text-shadow:
+      0 0 12px currentColor,
+      0 0 22px currentColor;
+    opacity: 1;
+  }
+  100% {
+    text-shadow: 0 0 6px currentColor;
+    opacity: 0.9;
+  }
+}
+
+.glow-letter {
+  animation: glowPulse 2.8s ease-in-out infinite;
+}
 
 
 @keyframes fadeGlow {
