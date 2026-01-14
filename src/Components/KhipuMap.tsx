@@ -171,13 +171,18 @@ export default function KhipuMap({
   maxZoom={40}
   zoomSnap={0.25}>
           {/* New Dark Modern Tile */}
-          <TileLayer
-  url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-  attribution='&copy; OpenStreetMap contributors &copy; CARTO'
-  subdomains={["a", "b", "c", "d"]}
-  noWrap={true}
-  bounds={[[-85, -180], [85, 180]]}
+         {/* SATELLITE BASE MAP */}
+<TileLayer
+  url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+  attribution="&copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics"
 />
+
+{/* LABELS (cities, borders) */}
+<TileLayer
+  url="https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}"
+  attribution="&copy; Esri"
+/>
+
 
 
 
