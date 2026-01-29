@@ -3,6 +3,8 @@ import { Navbar } from "./Navbar";
 import LeftPanel from "./LeftPanel";
 import RightPanel from "./RightPanel";
 import KhipuMap from "./KhipuMap";
+import { Outlet } from "react-router-dom";
+
 
 import museumCoords from "../data/museumCoords.json";
 
@@ -84,6 +86,7 @@ export default function Layout() {
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white relative">
       <Navbar />
+      <Outlet  />
 
       {/* ============================================================
           MODAL DE INTRODUCCIÓN (solo al inicio)

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -45,14 +46,15 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 text-gray-300 font-medium">
 
           {/* LINK PEQUEÑO A LA GUÍA (NUEVA PESTAÑA) */}
-          <a
-            href="/guia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-gray-300 hover:text-cyan-400 transition-colors duration-200"
-          >
-            Guía de interpretación
-          </a>
+         <Link
+  to="/guia"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm text-gray-300 hover:text-cyan-400"
+>
+  Guía de interpretación
+</Link>
+
 
         </div>
 
