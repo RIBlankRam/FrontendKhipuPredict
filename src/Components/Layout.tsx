@@ -115,7 +115,7 @@ export default function Layout() {
             </p>
 
             <p className="text-gray-400 text-sm text-center mb-6 italic">
-              Selecciona un museo en el panel izquierdo o explora el mapa para comenzar.
+              Select a museum in left panel or explore the map for start.
             </p>
 
             <div className="flex justify-center">
