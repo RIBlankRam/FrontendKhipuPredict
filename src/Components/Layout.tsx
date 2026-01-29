@@ -103,19 +103,19 @@ export default function Layout() {
             style={{ boxShadow: "0 0 20px rgba(255,255,255,0.08)" }}
           >
             <h1 className="text-3xl font-bold text-center mb-4 tracking-wide">
-              Welcome to KhipuPredict
+              Bienvenido a KhipuPredict
             </h1>
 
             <p className="text-gray-300 leading-relaxed mb-6 text-center">
-             This platform allows you to explore, analyze, and visualize real khipus from 
-             international museums. You can examine their cords, original colors, knots,
-            and structural details, as well as explore optimal routes between museums 
-            and perform advanced pattern analysis.
-            Please wait a few seconds while the database loads.
+              Esta plataforma te permite explorar, analizar y visualizar khipus
+              reales de museos internacionales.  
+              Puedes revisar sus cuerdas, colores originales, nudos y estructuras,
+              además de explorar rutas óptimas entre museos y análisis de patrones.
+              (Por favor esperar unos pocos segundos para cargar el database).
             </p>
 
             <p className="text-gray-400 text-sm text-center mb-6 italic">
-              Select a museum in left panel or explore the map for start.
+              Selecciona un museo en el panel izquierdo o explora el mapa para comenzar.
             </p>
 
             <div className="flex justify-center">
